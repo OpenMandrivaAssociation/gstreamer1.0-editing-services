@@ -89,8 +89,8 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-%configure
-%make
+make %{?_smp_mflags} V=1
+find . -name '.gitignore' | xargs rm -f
 
 %install
 %makeinstall_std
