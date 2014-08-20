@@ -17,14 +17,13 @@ Source0:	http://gstreamer.freedesktop.org/src/%{oname}/%{oname}-%{version}.tar.x
 BuildRequires:	gtk-doc
 BuildRequires:	valgrind
 BuildRequires:	gettext-devel
+BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gstreamer-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-controller-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-pbutils-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-plugins-base-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
-BuildRequires:  pkgconfig(gtk+-3.0) >= 2.91.3
-BuildRequires:  pkgconfig(gtk+-x11-3.0) >= 2.91.3
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(pygobject-3.0)
 Requires:	python-gstreamer%{api}
@@ -88,16 +87,9 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-%configure \
-    --enable-introspection --disable-static --with-gtk=3.0 --disable-examples
-make %{?_smp_mflags}
-
+autoreconf -fi
+%configure
+%make
 
 %install
-%makeinstall
-find %{buildroot}%{_libdir} -type f -name '*.la' -delete -print
-
-%post -n libges-1_0-0 -p /sbin/ldconfig
-
-%postun -n libges-1_0-0 -p /sbin/ldconfig
-
+%makeinstall_std
