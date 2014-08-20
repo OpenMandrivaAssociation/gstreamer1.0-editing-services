@@ -6,9 +6,6 @@
 %define devname %mklibname ges %{api} -d
 %define girname %mklibname ges-gir %{api}
 
-%{__global_cflags}   -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4
-%{optflags}          %{__global_cflags}
-$RPM_OPT_FLAGS       %{optflags}
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
@@ -94,7 +91,7 @@ that use %{name}.
 
 %build
 %configure
-%make
+%make V=1
 
 
 %install
