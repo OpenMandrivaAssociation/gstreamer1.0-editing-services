@@ -89,7 +89,7 @@ that use %{name}.
 
 %build
 autoreconf -fi
-%configure2_5x
+%configure
 %make V=1
 
 %install
