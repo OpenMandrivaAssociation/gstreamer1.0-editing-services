@@ -25,7 +25,7 @@ BuildRequires:	pkgconfig(gstreamer-pbutils-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-plugins-base-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(libxml-2.0)
-BuildRequires:	pkgconfig(pygobject-3.0)
+BuildRequires:	pkgconfig(pygobject-2.0)
 Requires:	python-gstreamer%{api}
 
 %description
@@ -87,7 +87,6 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-autoreconf -fi
 %configure
 %make
 
