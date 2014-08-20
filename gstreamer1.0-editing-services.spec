@@ -26,7 +26,7 @@ BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
 BuildRequires:  pkgconfig(gtk+-3.0) >= 2.91.3
 BuildRequires:  pkgconfig(gtk+-x11-3.0) >= 2.91.3
 BuildRequires:	pkgconfig(libxml-2.0)
-BuildRequires:	pkgconfig(pygobject-2.0)
+BuildRequires:	pkgconfig(pygobject-3.0)
 Requires:	python-gstreamer%{api}
 
 %description
