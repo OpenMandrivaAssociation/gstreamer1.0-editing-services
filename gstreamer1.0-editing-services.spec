@@ -18,6 +18,7 @@ BuildRequires:	gtk-doc
 BuildRequires:	valgrind
 BuildRequires:	gettext-devel
 BuildRequires:	pkgconfig(gtk+-2.0)
+BuildRequires: 	pkgconfig(gio-2.0) >= 2.16
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gstreamer-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-controller-%{api}) >= 1.2.0
