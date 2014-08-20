@@ -9,7 +9,7 @@
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
 Version:	1.2.1
-Release:	1
+Release:	2
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
 Url:		http://cgit.freedesktop.org/gstreamer/gst-editing-services/
@@ -17,6 +17,7 @@ Source0:	http://gstreamer.freedesktop.org/src/%{oname}/%{oname}-%{version}.tar.x
 BuildRequires:	gtk-doc
 BuildRequires:	valgrind
 BuildRequires:	gettext-devel
+BuildRequires:  pkgconfig(gio-2.0) >= 2.16
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gstreamer-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-controller-%{api}) >= 1.2.0
