@@ -93,9 +93,6 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-export CFLAGS="" 
-export CXXFLAGS=""
-
 %configure
 %make
 
