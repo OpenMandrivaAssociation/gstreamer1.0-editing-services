@@ -92,6 +92,7 @@ that use %{name}.
 export WARNING_CFLAGS="-Wall -Wdeclaration-after-statement -Wvla -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wformat-nonliteral -Wformat-security -Wold-style-definition -Winit-self -Wmissing-include-dirs -Waddress -Waggregate-return -Wno-multichar -Wnested-externs" 
 export WARNING_CXXFLAGS="-Wall"
 
+%configure
 %make
 
 
