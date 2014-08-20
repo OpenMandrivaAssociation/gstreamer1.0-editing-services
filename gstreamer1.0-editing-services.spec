@@ -89,7 +89,7 @@ that use %{name}.
 
 %build
 %configure \
-    --enable-introspection
+    --enable-introspection --disable-static --with-gtk=3.0 --disable-examples
 make %{?_smp_mflags}
 
 
