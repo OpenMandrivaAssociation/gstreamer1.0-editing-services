@@ -90,8 +90,8 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-%configure
-%make V=1
+configure
+make V=1
 
 
 %install
