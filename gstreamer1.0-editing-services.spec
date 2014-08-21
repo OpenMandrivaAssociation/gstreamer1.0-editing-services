@@ -90,7 +90,7 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-configure
+./configure
 make V=1
 
 
