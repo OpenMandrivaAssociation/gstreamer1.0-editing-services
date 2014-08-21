@@ -30,6 +30,10 @@ BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(pygobject-3.0)
 
 Requires:	python-gstreamer%{api}
+Requires:	gstreamer%{api}-plugins-base
+Requires:	gstreamer%{api}-plugins-good
+Requires:	gstreamer%{api}-plugins-ugly
+Requires:	gstreamer%{api}-plugins-bad
 
 %description
 This is a high-level library for facilitating the creation of audio/video
@@ -90,8 +94,8 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-./configure
-make V=1
+%configure
+%make V=1
 
 
 %install
