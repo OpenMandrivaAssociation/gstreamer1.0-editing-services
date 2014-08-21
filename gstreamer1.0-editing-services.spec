@@ -15,11 +15,15 @@ License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
 Url:		http://cgit.freedesktop.org/gstreamer/gst-editing-services/
 Source0:	http://gstreamer.freedesktop.org/src/%{oname}/%{oname}-%{version}.tar.xz
+
+BuildRequires:	itstool intltool
 BuildRequires:	gtk-doc
 BuildRequires:	valgrind
 BuildRequires:	gettext-devel
-BuildRequires:	pkgconfig(gtk+-2.0)
+BuildRequires:	pkgconfig(gtk+-3.0)
+BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(glib-2.0)
+BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gstreamer-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-controller-%{api}) >= 1.2.0
@@ -27,9 +31,13 @@ BuildRequires:	pkgconfig(gstreamer-pbutils-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-plugins-base-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(libxml-2.0)
+BuildRequires:	pkgconfig(python-2)
+BuildRequires:	pkgconfig(python-3)
+BuildRequires:	pkgconfig(py3cairo)
 BuildRequires:	pkgconfig(pygobject-3.0)
 
 Requires:	python-gstreamer%{api}
+Requires:	gnome-common
 Requires:	gstreamer%{api}-plugins-base
 Requires:	gstreamer%{api}-plugins-good
 Requires:	gstreamer%{api}-plugins-ugly
