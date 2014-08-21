@@ -31,8 +31,8 @@ BuildRequires:	pkgconfig(gstreamer-pbutils-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-plugins-base-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(libxml-2.0)
-BuildRequires:	pkgconfig(python-2)
-BuildRequires:	pkgconfig(python-3)
+BuildRequires:	pkgconfig(python2)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	pkgconfig(py3cairo)
 BuildRequires:	pkgconfig(pygobject-3.0)
 
