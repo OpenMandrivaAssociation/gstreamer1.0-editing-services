@@ -28,6 +28,8 @@ BuildRequires:	pkgconfig(gstreamer-controller-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-pbutils-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-plugins-base-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
+BuildRequires:	pkgconfig(gstreamer-0.10)
+BuildRequires:	pkgconfig(gstreamer-plugins-base-0.10)
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(python2)
 BuildRequires:	pkgconfig(python3)
@@ -100,7 +102,7 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-%configure --with-gtk=3.0
+%configure
 %make V=1
 
 
