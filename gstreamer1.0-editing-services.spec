@@ -18,10 +18,8 @@ Source0:	http://gstreamer.freedesktop.org/src/%{oname}/%{oname}-%{version}.tar.x
 
 BuildRequires:	itstool intltool
 BuildRequires:	gtk-doc
-BuildRequires:	valgrind
-BuildRequires:	gettext-devel
 BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	pkgconfig(gtk+-3.0)
+BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
@@ -102,7 +100,7 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-%configure --prefix=/usr --libdir=%{_libdir}
+%configure --with-gtk=3.0
 %make V=1
 
 
