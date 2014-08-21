@@ -94,7 +94,7 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-%configure
+%configure --prefix=/usr
 %make V=1
 
 
