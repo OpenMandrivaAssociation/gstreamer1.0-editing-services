@@ -94,7 +94,7 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-%configure --prefix=/usr
+%configure --prefix=/usr --libdir=%{_libdir}
 %make V=1
 
 
