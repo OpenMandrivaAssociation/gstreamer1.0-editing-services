@@ -24,6 +24,9 @@ BuildRequires:	pkgconfig(gstreamer-controller-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-pbutils-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-plugins-base-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
+BuildRequires:	pkgconfig(gstreamer-audio-%{api})
+BuildRequires:	pkgconfig(gstreamer-tag-%{api})
+BuildRequires:	pkgconfig(gstreamer-base-%{api})
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(pygobject-3.0)
 
