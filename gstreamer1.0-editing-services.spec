@@ -8,8 +8,8 @@
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
-Version:	1.2.1
-Release:	2
+Version:	1.3.90
+Release:	1
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
 Url:		http://cgit.freedesktop.org/gstreamer/gst-editing-services/
@@ -26,7 +26,6 @@ BuildRequires:	pkgconfig(gstreamer-plugins-base-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(pygobject-3.0)
-Requires:	python-gstreamer%{api}
 
 %description
 This is a high-level library for facilitating the creation of audio/video
@@ -87,8 +86,7 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-autoreconf -fi
-%configure2_5x
+%configure
 %make V=1
 
 %install
