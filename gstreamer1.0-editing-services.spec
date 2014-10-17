@@ -86,7 +86,7 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-%configure
+%configure --with-gtk=3.0 --disable-examples
 %make V=1
 
 %install
