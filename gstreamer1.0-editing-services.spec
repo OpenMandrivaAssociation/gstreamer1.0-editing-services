@@ -27,6 +27,12 @@ BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-audio-%{api})
 BuildRequires:	pkgconfig(gstreamer-tag-%{api})
 BuildRequires:	pkgconfig(gstreamer-base-%{api})
+BuildRequires:	gstreamer1.0-plugins-good
+BuildRequires:	gstreamer1.0-plugins-base
+BuildRequires:	gstreamer1.0-plugins-bad
+BuildRequires:	gstreamer1.0-plugins-ugly
+BuildRequires:	gstreamer1.0-libav
+BuildRequires:	gstreamer1.0-soup
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(pygobject-3.0)
 
