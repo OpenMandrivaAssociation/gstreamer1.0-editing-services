@@ -28,8 +28,12 @@ BuildRequires:	pkgconfig(gstreamer-controller-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-pbutils-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-plugins-base-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
-BuildRequires:	pkgconfig(gstreamer-0.10)
-BuildRequires:	pkgconfig(gstreamer-plugins-base-0.10)
+BuildRequires:	gstreamer1.0-plugins-good
+BuildRequires:	gstreamer1.0-plugins-base
+BuildRequires:	gstreamer1.0-plugins-bad
+BuildRequires:	gstreamer1.0-plugins-ugly
+BuildRequires:	gstreamer1.0-libav
+BuildRequires:	gstreamer1.0-soup
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(python2)
 BuildRequires:	pkgconfig(python3)
