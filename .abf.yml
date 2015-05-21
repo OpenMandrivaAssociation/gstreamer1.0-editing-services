@@ -1,2 +1,5 @@
+removed_sources:
+  gstreamer-editing-services-1.2.1.tar.xz: 712d613eac2de28ded3640801565e0dde86b2d89
+  gstreamer-editing-services-1.3.90.tar.xz: 0bec6af24bb4a432e4ac3dc23577a722fbc3ab38
 sources:
-  "gstreamer-editing-services-1.2.1.tar.xz": 712d613eac2de28ded3640801565e0dde86b2d89
+  gstreamer-editing-services-1.4.0.tar.xz: 895433ce87d69d86e36e4697d261850b04a580f8

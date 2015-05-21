@@ -9,8 +9,8 @@
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
-Version:	1.2.1
-Release:	2
+Version:	1.4.0
+Release:	0.1
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
 Url:		http://cgit.freedesktop.org/gstreamer/gst-editing-services/
@@ -18,16 +18,18 @@ Source0:	http://gstreamer.freedesktop.org/src/%{oname}/%{oname}-%{version}.tar.x
 
 BuildRequires:	itstool intltool
 BuildRequires:	gtk-doc
-BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	pkgconfig(gtk+-2.0)
-BuildRequires:	pkgconfig(glib-2.0)
-BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
+BuildRequires:	valgrind
+BuildRequires:	gettext-devel
+BuildRequires:  pkgconfig(gio-2.0) >= 2.16
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gstreamer-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-controller-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-pbutils-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-plugins-base-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
+BuildRequires:	pkgconfig(gstreamer-audio-%{api})
+BuildRequires:	pkgconfig(gstreamer-tag-%{api})
+BuildRequires:	pkgconfig(gstreamer-base-%{api})
 BuildRequires:	gstreamer1.0-plugins-good
 BuildRequires:	gstreamer1.0-plugins-base
 BuildRequires:	gstreamer1.0-plugins-bad
@@ -39,13 +41,6 @@ BuildRequires:	pkgconfig(python2)
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	pkgconfig(py3cairo)
 BuildRequires:	pkgconfig(pygobject-3.0)
-
-Requires:	python-gstreamer%{api}
-Requires:	gnome-common
-Requires:	gstreamer%{api}-plugins-base
-Requires:	gstreamer%{api}-plugins-good
-Requires:	gstreamer%{api}-plugins-ugly
-Requires:	gstreamer%{api}-plugins-bad
 
 %description
 This is a high-level library for facilitating the creation of audio/video
@@ -106,7 +101,7 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-%configure
+%configure --with-gtk=3.0 --disable-examples
 %make V=1
 
 
