@@ -8,8 +8,8 @@
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
-Version:	1.4.0
-Release:	2
+Version:	1.6.2
+Release:	1
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
 Url:		http://cgit.freedesktop.org/gstreamer/gst-editing-services/
@@ -43,6 +43,8 @@ non-linear editors.
 %files
 %doc ChangeLog COPYING* README RELEASE NEWS AUTHORS
 %{_bindir}/ges-launch-%{api}
+%{_libdir}/gstreamer-%{api}/libgstnle.so
+%{_datadir}/bash-completion/completions/ges-launch-%{api}
 
 #----------------------------------------------------------------------------
 
