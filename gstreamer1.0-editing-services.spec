@@ -15,6 +15,7 @@ Group:		System/Libraries
 Url:		http://cgit.freedesktop.org/gstreamer/gst-editing-services/
 Source0:	http://gstreamer.freedesktop.org/src/%{oname}/%{oname}-%{version}.tar.xz
 BuildRequires:	gtk-doc
+BuildRequires:  flex-devel
 BuildRequires:	valgrind
 BuildRequires:	gettext-devel
 BuildRequires:  pkgconfig(gio-2.0) >= 2.16
