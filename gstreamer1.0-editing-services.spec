@@ -8,8 +8,8 @@
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
-Version:	1.6.2
-Release:	2
+Version:	1.16.0
+Release:	1
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
 Url:		http://cgit.freedesktop.org/gstreamer/gst-editing-services/
@@ -36,6 +36,7 @@ BuildRequires:	gstreamer1.0-libav
 BuildRequires:	gstreamer1.0-soup
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(pygobject-3.0)
+BuildRequires:	pkgconfig(gio-2.0)
 
 %description
 This is a high-level library for facilitating the creation of audio/video
