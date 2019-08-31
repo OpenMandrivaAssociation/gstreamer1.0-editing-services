@@ -5,6 +5,7 @@
 %define libname %mklibname ges %{api} %{major}
 %define devname %mklibname ges %{api} -d
 %define girname %mklibname ges-gir %{api}
+%define plugname gstreamer%{api}-nle
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
