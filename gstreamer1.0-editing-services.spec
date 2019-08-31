@@ -45,8 +45,9 @@ non-linear editors.
 %files
 %doc ChangeLog COPYING* README RELEASE NEWS AUTHORS
 %{_bindir}/ges-launch-%{api}
-%{_libdir}/gstreamer-%{api}/libgstnle.so
 %{_datadir}/bash-completion/completions/ges-launch-%{api}
+%{_libdir}/gstreamer-1.0/libgstges.so
+%{_mandir}/man1/ges-launch-%{api}.1*
 
 #----------------------------------------------------------------------------
 
@@ -60,6 +61,32 @@ non-linear editors.
 
 %files -n %{libname}
 %{_libdir}/libges-%{api}.so.%{major}*
+
+#----------------------------------------------------------------------------
+
+%package -n %{plugname}
+Summary:	GStreamer Non Linear Engine plugin
+Group:		Video/Utilities
+Obsoletes:	gstreamer1.0-gnonlin < 1.6.0
+
+%description -n %{plugname}
+GStreamer Non Linear Engine plugin.
+
+%files -n %{plugname}
+%{_libdir}/gstreamer-%{api}/libgstnle.so
+
+#----------------------------------------------------------------------------
+
+%package python
+Summary:	Python bindings for %{name}
+Group:		Development/Python
+Requires:	gstreamer1.0-python
+
+%description python
+Python bindings for %{name}.
+
+%files python
+%{python2_sitearch}/gstreamer-editing-services/
 
 #----------------------------------------------------------------------------
 
@@ -100,8 +127,8 @@ that use %{name}.
 
 %build
 %configure --with-gtk=3.0 --disable-examples
-%make V=1
+%make_build V=1
 
 %install
-%makeinstall_std
+%make_install
 
