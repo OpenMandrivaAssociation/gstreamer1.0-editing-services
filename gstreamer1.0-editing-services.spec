@@ -15,6 +15,7 @@ License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
 Url:		http://cgit.freedesktop.org/gstreamer/gst-editing-services/
 Source0:	http://gstreamer.freedesktop.org/src/gstreamer-editing-services/%{oname}-%{version}.tar.xz
+BuildRequires:  meson
 BuildRequires:	gtk-doc
 BuildRequires:  flex-devel
 BuildRequires:	valgrind
@@ -128,9 +129,9 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-%configure --with-gtk=3.0 --disable-examples
-%make_build V=1
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
