@@ -1,3 +1,5 @@
+%bcond_with validate
+
 %define oname gst-editing-services
 
 %define api 1.0
@@ -132,7 +134,12 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-%meson
+%meson \
+        -Dpackage-name='%{_vendor} %{name} package' \
+        -Dpackage-origin='https://www.%{_real_vendor}.org' \
+        -Dvalidate=%{?with_validate:enabled}%{?!with_validate:disabled} \
+        -Dexamples=disabled
+        
 %meson_build
 
 %install
