@@ -142,7 +142,7 @@ that use %{name}.
         -Dpackage-origin='https://www.%{_real_vendor}.org' \
         -Dvalidate=%{?with_validate:enabled}%{?!with_validate:disabled} \
         -Ddoc=disabled \
-        -Dpython=enabled
+        -Dpython=enabled \
         -Dexamples=disabled
         
 %meson_build
