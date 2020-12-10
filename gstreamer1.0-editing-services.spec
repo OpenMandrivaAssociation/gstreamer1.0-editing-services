@@ -9,7 +9,7 @@
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
-Version:	1.18.1
+Version:	1.18.2
 Release:	1
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
