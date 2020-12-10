@@ -138,7 +138,7 @@ that use %{name}.
         -Dpackage-name='%{_vendor} %{name} package' \
         -Dpackage-origin='https://www.%{_real_vendor}.org' \
         -Dvalidate=%{?with_validate:enabled}%{?!with_validate:disabled} \
-        -Ddoc=disabled
+        -Ddoc=disabled \
         -Dexamples=disabled
         
 %meson_build
