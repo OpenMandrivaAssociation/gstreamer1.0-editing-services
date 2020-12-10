@@ -44,6 +44,7 @@ BuildRequires:	gstreamer1.0-soup
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(pygobject-3.0)
 BuildRequires:	pkgconfig(gio-2.0)
+BuildRequires:  pkgconfig(python)
 
 %description
 This is a high-level library for facilitating the creation of audio/video
@@ -93,7 +94,7 @@ Requires:	gstreamer1.0-python
 Python bindings for %{name}.
 
 %files python
-%{python2_sitearch}/gstreamer-editing-services/
+#{python_sitearch}/gstreamer-editing-services/
 
 #----------------------------------------------------------------------------
 
@@ -145,4 +146,3 @@ that use %{name}.
 
 %install
 %meson_install
-
