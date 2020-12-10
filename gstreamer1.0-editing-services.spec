@@ -20,6 +20,7 @@ BuildRequires:	gtk-doc
 BuildRequires:  flex-devel
 BuildRequires:	valgrind
 BuildRequires:	gettext-devel
+BuildRequires:  pkgconfig(bash-completion)
 BuildRequires:  pkgconfig(gio-2.0) >= 2.16
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gstreamer-%{api}) >= 1.2.0
