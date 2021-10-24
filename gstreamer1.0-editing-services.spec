@@ -11,7 +11,7 @@
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
-Version:	1.18.4
+Version:	1.19.2
 Release:	1
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
@@ -143,7 +143,8 @@ that use %{name}.
         -Dvalidate=%{?with_validate:enabled}%{?!with_validate:disabled} \
         -Ddoc=disabled \
         -Dpython=enabled \
-        -Dexamples=disabled
+        -Dexamples=disabled \
+        --buildtype=release
         
 %meson_build
 
