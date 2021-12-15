@@ -11,7 +11,7 @@
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
-Version:	1.19.2
+Version:	1.19.3
 Release:	1
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
@@ -138,8 +138,6 @@ that use %{name}.
 
 %build
 %meson \
-        -Dpackage-name='%{_vendor} %{name} package' \
-        -Dpackage-origin='https://www.%{_real_vendor}.org' \
         -Dvalidate=%{?with_validate:enabled}%{?!with_validate:disabled} \
         -Ddoc=disabled \
         -Dpython=enabled \
