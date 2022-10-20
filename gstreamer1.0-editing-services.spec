@@ -97,7 +97,7 @@ Python bindings for %{name}.
 
 %files python
 #{python_sitearch}/gstreamer-editing-services/
-%{python_sitelibs}/gi/overrides/GES.py
+%{python_sitelib}/gi/overrides/GES.py
 
 #----------------------------------------------------------------------------
 
