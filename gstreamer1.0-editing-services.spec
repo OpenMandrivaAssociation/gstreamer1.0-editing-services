@@ -34,7 +34,7 @@ BuildRequires:	pkgconfig(gstreamer-video-%{api}) >= 1.2.0
 BuildRequires:	pkgconfig(gstreamer-audio-%{api})
 BuildRequires:	pkgconfig(gstreamer-tag-%{api})
 BuildRequires:	pkgconfig(gstreamer-base-%{api})
-BuildRequires:  pkgconfig(gst-validate-1.0)
+#BuildRequires:  pkgconfig(gst-validate-1.0)
 BuildRequires:	gstreamer1.0-plugins-good
 BuildRequires:	gstreamer1.0-plugins-base
 BuildRequires:	gstreamer1.0-plugins-bad
