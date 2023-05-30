@@ -11,8 +11,8 @@
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
-Version:	1.22.1
-Release:	2
+Version:	1.22.3
+Release:	1
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
 Url:		http://cgit.freedesktop.org/gstreamer/gst-editing-services/
