@@ -11,7 +11,7 @@
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
-Version:	1.22.9
+Version:	1.24.0
 Release:	1
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
