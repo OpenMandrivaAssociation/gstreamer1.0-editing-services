@@ -11,12 +11,12 @@
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
-Version:	1.24.0
+Version:	1.24.2
 Release:	1
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
-Url:		http://cgit.freedesktop.org/gstreamer/gst-editing-services/
-Source0:	http://gstreamer.freedesktop.org/src/gstreamer-editing-services/%{oname}-%{version}.tar.xz
+Url:		https://cgit.freedesktop.org/gstreamer/gst-editing-services/
+Source0:	https://gstreamer.freedesktop.org/src/gstreamer-editing-services/%{oname}-%{version}.tar.xz
 BuildRequires:  meson
 BuildRequires:	gtk-doc
 BuildRequires:  flex-devel
