@@ -146,6 +146,7 @@ export CXX=g++
         -Ddoc=disabled \
         -Dpython=enabled \
         -Dexamples=disabled \
+        -Dtests=false \
         --buildtype=release
         
 %meson_build
