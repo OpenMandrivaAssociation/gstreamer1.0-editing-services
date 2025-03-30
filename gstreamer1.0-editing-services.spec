@@ -55,9 +55,9 @@ non-linear editors.
 %{_bindir}/ges-launch-%{api}
 %{_datadir}/bash-completion/completions/ges-launch-%{api}
 %{_libdir}/gstreamer-1.0/libgstges.so
-%{_libdir}/gst-validate-launcher/python/launcher/apps/geslaunch.py
+#{_libdir}/gst-validate-launcher/python/launcher/apps/geslaunch.py
 %{_mandir}/man1/ges-launch-%{api}.1*
-%{_datadir}/gstreamer-1.0/validate/scenarios/ges-edit-clip-while-paused.scenario
+#{_datadir}/gstreamer-1.0/validate/scenarios/ges-edit-clip-while-paused.scenario
 
 #----------------------------------------------------------------------------
 
