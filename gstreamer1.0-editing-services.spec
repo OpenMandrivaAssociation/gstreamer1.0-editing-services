@@ -11,7 +11,7 @@
 
 Summary:	Gstreamer editing services
 Name:		gstreamer%{api}-editing-services
-Version:	1.26.10
+Version:	1.28.1
 Release:	1
 License:	GPLv2+ and LGPLv2+
 Group:		System/Libraries
@@ -41,7 +41,7 @@ BuildRequires:	gstreamer1.0-plugins-bad
 BuildRequires:	gstreamer1.0-plugins-ugly
 BuildRequires:	gstreamer1.0-libav
 BuildRequires:	gstreamer1.0-soup
-BuildRequires:	pkgconfig(libxml-2.0)
+BuildRequires:	pkgconfig(libxml-2.0) >= 2.15.2
 BuildRequires:	pkgconfig(pygobject-3.0)
 BuildRequires:	pkgconfig(gio-2.0)
 BuildRequires:  pkgconfig(python)
@@ -51,7 +51,7 @@ This is a high-level library for facilitating the creation of audio/video
 non-linear editors.
 
 %files
-%doc ChangeLog COPYING* README RELEASE NEWS AUTHORS
+%doc ChangeLog COPYING* README RELEASE
 %{_bindir}/ges-launch-%{api}
 %{_datadir}/bash-completion/completions/ges-launch-%{api}
 %{_libdir}/gstreamer-1.0/libgstges.so
