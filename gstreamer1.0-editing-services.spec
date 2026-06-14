@@ -139,8 +139,8 @@ that use %{name}.
 %setup -qn %{oname}-%{version}
 
 %build
-export CC=gcc
-export CXX=g++
+#export CC=gcc
+#export CXX=g++
 %meson \
         -Dvalidate=%{?with_validate:enabled}%{?!with_validate:disabled} \
         -Ddoc=disabled \
